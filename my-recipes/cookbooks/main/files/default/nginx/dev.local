@@ -15,7 +15,7 @@ error_log  /var/log/nginx/dev.local.error.log notice;
         }
 
         location ~ \.php$ {
-                try_files $uri =404;
+#                try_files $uri =404; <- since everything is forced to index.php, not needed[?]
                 fastcgi_pass 127.0.0.1:9001;
                 fastcgi_index index.php;
                 include /etc/nginx/fastcgi_params;
