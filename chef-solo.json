@@ -1,0 +1,15 @@
+{
+	"run_list" : [ 
+		"recipe[main]"
+	],
+	"mysql" : {
+                "server_root_password": "vagrant",
+                "server_repl_password": "vagrant",
+                "server_debian_password": "vagrant"
+	},
+	"nginx" : {
+                "default_site_enabled": false,
+                "user": "www",
+                "log_dir": "/var/log/nginx"
+	}
+}
