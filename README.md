@@ -7,7 +7,7 @@ Default LEMP development VM for testing/hobby development.
 
 ## Where do you put your web app?
  * ./www - This is the directory that is mounted onto /var/www/ in the VM [/var/www/dev.local/htdocs is the full path of the default dev site]
- * ./opt - This is just gets mounted on /opt in case you need additional stuff [e.g. adding an irc bot]
+ * ./srv - This is just gets mounted on /srv in case you need additional stuff [e.g. adding an irc bot]
 
 ## What is installed:
  * Ubuntu 12.04 LTS - Base VM box, default option for vagrant
